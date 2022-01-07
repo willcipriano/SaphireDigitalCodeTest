@@ -2,7 +2,7 @@
 
 This repo contains CodeTestLib that in turn contains 3 modules:
 
-##StringToInt
+## StringToInt
 
 Converts a provided string into an integer representation.
 
@@ -15,7 +15,7 @@ print(result.int_repr)
 1
 ```
 
-##PalindromeFinder
+## PalindromeFinder
 
 Locates the longest palindrome within a given text.
 
@@ -28,7 +28,7 @@ print(result)
 racecar
 ```
 
-##WordAssembler
+## WordAssembler
 
 Assemble words from a given list with a given list of word parts.
 
