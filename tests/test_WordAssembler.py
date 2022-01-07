@@ -2,8 +2,34 @@ from CodeTestLib import WordAssembler
 
 
 def test_provided():
-    words = ['albums', 'barely', 'befoul', 'convex', 'hereby', 'jigsaw', 'tailor', 'weaver']
-    word_parts = ['al', 'bums', 'bar', 'ely', 'be', 'foul', 'con', 'vex', 'here', 'by', 'jig', 'saw', 'tail', 'or', 'we', 'aver']
+    words = [
+        "albums",
+        "barely",
+        "befoul",
+        "convex",
+        "hereby",
+        "jigsaw",
+        "tailor",
+        "weaver",
+    ]
+    word_parts = [
+        "al",
+        "bums",
+        "bar",
+        "ely",
+        "be",
+        "foul",
+        "con",
+        "vex",
+        "here",
+        "by",
+        "jig",
+        "saw",
+        "tail",
+        "or",
+        "we",
+        "aver",
+    ]
     words_used = list()
 
     results = WordAssembler.pair_words(words, word_parts, print_result=False)

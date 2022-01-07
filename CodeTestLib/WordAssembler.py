@@ -1,3 +1,7 @@
+from typing import Dict
+from typing import List
+
+
 class PairResult:
     """Represents a attempt to pair together a word from two elements"""
 
@@ -19,9 +23,9 @@ class PairResult:
             print(f"No Match: {self.part_1} + {self.part_2} != {self.word}")
 
 
-def __create_word_pairs__(word: str, parts: list[str]) -> list[PairResult]:
+def __create_word_pairs__(word: str, parts: List[str]) -> List[PairResult]:
     """Creates all possible word pairs for future review"""
-    result: list[PairResult] = list()
+    result: List[PairResult] = list()
 
     for first_part in parts:
         for second_part in parts:
@@ -32,9 +36,11 @@ def __create_word_pairs__(word: str, parts: list[str]) -> list[PairResult]:
     return result
 
 
-def pair_words(words: list[str], parts: list[str], print_result=True) -> dict[str, list[PairResult]]:
+def pair_words(
+    words: List[str], parts: List[str], print_result=True
+) -> Dict[str, List[PairResult]]:
     """Generates and prints all possible word pairs based on a list of words and word parts"""
-    result: dict[str, list[PairResult]] = dict()
+    result: Dict[str, List[PairResult]] = dict()
 
     for word in words:
         result[word] = __create_word_pairs__(word, parts)

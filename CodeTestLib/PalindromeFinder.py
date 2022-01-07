@@ -6,7 +6,7 @@ def locate_palindromic_substring(text: str) -> str:
     for x in range(size):
         for y in range(size, x, -1):
 
-            if len(result) >= y-x:
+            if len(result) >= y - x:
                 break
 
             elif text[x:y] == text[x:y][::-1]:
